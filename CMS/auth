@@ -1,0 +1,3 @@
+# Manually create an AT&T API accesstoken using curl. 12/12/12 - ds2222
+# usage: ./auth <auth-example>
+curl -k "https://api.att.com/oauth/token" -d @$1

@@ -1,0 +1,1 @@
+curl -v -k "https://api.att.com/rest/1/Sessions/$1/Signals" -H "Content-Type: application/json" -H "Authorization: Bearer 44b976cfb751097a7b83d33ed003ab4e" --data @cms-send-signal.data

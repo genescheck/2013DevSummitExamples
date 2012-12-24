@@ -1,0 +1,3 @@
+curl -X POST -v -k --proxy http://proxy.entp.attws.com:8080 "https://api.att.com/rest/1/Sessions" -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Bearer b8c0904fd5eb34aa1adad5d43db43f8a" -d@cms-voice.data
+#curl -X POST -v -k "https://api.att.com/rest/1/Sessions" -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Bearer b8c0904fd5eb34aa1adad5d43db43f8a" -d@cms-voice.data
+
