@@ -1,4 +1,4 @@
 CMS
 ===
 
-My Hackathon Repository
+AT&T DevSummit repository for AT&T Call Management API sample apps.
