@@ -1,4 +1,4 @@
-  2013 AT&T Dev Summit Examples
+  2013DevSummitExamples
 
   Sample code and apps for the 2013 AT&T Dev Summit
   
