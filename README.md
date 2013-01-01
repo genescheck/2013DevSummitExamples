@@ -1,7 +1,5 @@
 
-
   2013DevSummitExamples
-
   =====================
 
   Sample code and apps for 2013 AT&T Dev Summit
