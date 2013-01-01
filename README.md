@@ -1,9 +1,10 @@
+
+
   2013DevSummitExamples
+
   =====================
 
   Sample code and apps for 2013 AT&T Dev Summit
-
-  Directory - Associated AT&T API
 
   CMS/ - AT&T Call Management API
   
