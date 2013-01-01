@@ -1,6 +1,6 @@
   2013DevSummitExamples
 
-  This repository contains sample code and apps for the 2013 AT&T Dev Summit
+  This repository contains sample code and apps for the 2013 AT&T Developer Summit and Hackathon
   
   ===============================
 
