@@ -1,5 +1,5 @@
 Speech
-===
+=======
 
 AT&T DevSummit repository for AT&T Speech API sample apps.
 
@@ -13,6 +13,9 @@ You will need different Access Tokens for production and Alpha Speech requests.
 Once you have an Access Token, replace the ACCESS_TOKEN in the speech scripts
 with the actual Access Token value obtained from above.
 
+The scripts use the freely avaible command line program curl, available here
+http://curl.haxx.se/. The user can use any language or tool they want, but
+the below scripts will give them an idea on how to construct the requests.
 
 Examples scripts for access to production Speech API (https://api.att.com)
 ---------------------------------------------------------------------------
