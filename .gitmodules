@@ -1,3 +1,6 @@
 [submodule "Payment/demo"]
 	path = Payment/demo
 	url = https://github.com/attdevsupport/2013SummitPaymentDemo.git
+[submodule "Payment/att_wrapper"]
+	path = Payment/att_wrapper
+	url = https://github.com/attdevsupport/2013DevSummitPaymentWrapper.git
