@@ -1,5 +1,5 @@
 source :rubygems
-gem "att_wrapper", :git => "https://maymount:x0Rcy+Ss@github.com/maymount/att_wrapper.git"
+gem "att_wrapper", "0.1.0.pre", :git => "https://github.com/attdevsupport/2013DevSummitExamples.git"
 gem "data_mapper"
 gem "dm-postgres-adapter"
 gem "dm-types"

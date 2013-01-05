@@ -1,6 +1,6 @@
 GIT
-  remote: https://maymount:x0Rcy+Ss@github.com/maymount/att_wrapper.git
-  revision: 659f765d15791fb2da5c8d140ad0efdee79decc5
+  remote: https://github.com/attdevsupport/2013DevSummitExamples.git
+  revision: 7b7714bd254911045eed818d6f5c422c3aab7ca4
   specs:
     att_wrapper (0.1.0.pre)
 
@@ -92,7 +92,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  att_wrapper!
+  att_wrapper (= 0.1.0.pre)!
   data_mapper
   dm-postgres-adapter
   dm-types
