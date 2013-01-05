@@ -1,0 +1,14 @@
+source :rubygems
+gem "att_wrapper", :git => "https://maymount:x0Rcy+Ss@github.com/maymount/att_wrapper.git"
+gem "data_mapper"
+gem "dm-postgres-adapter"
+gem "dm-types"
+gem "dm-validations"
+gem "haml", "~>3.1"
+gem "htmlentities", "~>4.3"
+gem "json"
+gem "koala"
+gem "pg"
+gem "sinatra", :require => "sinatra/base"
+gem "thin", "~>1.5"
+

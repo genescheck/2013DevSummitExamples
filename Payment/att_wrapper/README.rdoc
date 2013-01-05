@@ -1,0 +1,51 @@
+= att_wrapper
+
+The AT&T API Developer Program has RESTful APIs that provide a variety of services like In-App Payments and SMS messages.
+
+This gem provides a wrapper that simplifies the usage of these APIs.
+
+Step 1: Sign up at http://developer.att.com
+
+Step 2: Create an application and get the client id and secret
+
+Step 3: Create an AttWrapper::Client object
+
+== Payments
+
+Payments require the subscriber to go through the Consent process by redirecting their browser. 
+
+The getSinglePayRedirect and getSubscriptionRedirect methods create the URLs and then your code can send the browser to that location:
+
+a = AttWrapper::Client.new("client id","client secret",["PAYMENT"], "https://api.att.com/")
+
+redirect = a.getSinglePayRedirect("1.23",1,"A description","merchantTransactionId","productId","http://myurl")
+
+-- OR --
+
+redirect = a.getSubscriptionRedirect("1.23",1,"A description","merchantTransactionId","productId","http://myurl")
+
+At the end of the consent process the browser is redirected to the URL specified in the initial call with the query string value TransactionAuthCode if the call is successful.
+
+http://myurl?TransactionAuthCode=ABCDEF12345
+
+The getTransactionStatus method can then be used to get the transaction details:
+
+status = a.getTransactionStatus("TransactionAuthCode","ABCDEF12345")
+
+
+
+== Contributing to att_wrapper
+ 
+* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
+* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
+* Fork the project.
+* Start a feature/bugfix branch.
+* Commit and push until you are happy with your contribution.
+* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+== Copyright
+
+Copyright (c) 2012-2013 AT&T. See LICENSE.txt for
+further details.
+

@@ -1,0 +1,18 @@
+= AT&T API Platform Payment Demo
+
+This is a demonstration project that shows how to use the AT&T Payment Services API.  
+It is not a working store front application, but it does show the complete cycle of making a purchase, getting its status, refunding it, and getting notifications.
+
+= Getting Started
+
+The application uses the Sinatra Ruby framework and is easily used with Heroku.
+
+You must have PostgreSQL installed.
+
+The following environment variables must be set
+
+API_KEY:      From your AT&T API Platform Application
+API_SECRET:   From your AT&T API Platform Application
+ENDPOINT:     
+DATABASE_URL
+

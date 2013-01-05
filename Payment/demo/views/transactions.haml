@@ -1,0 +1,28 @@
+%div.title Transactions
+%table{ :border => "1" }
+	%tr
+		%td Ids
+		%td Status
+		%td Dates
+		%td Body
+	- transactions.each do |t|
+		%tr
+			%td.transactionList
+				%ul
+					%li= "Id: #{t.id}"
+					%li= "TxId: #{t.txId}"
+					%li= "MerchId: #{t.merchantTxId}"
+					%li= "OrigId: #{t.originalTxId}"
+					%li= "AuthCode: #{t.authCode}"
+			%td.transactionList
+				%ul
+					%li= "Type: #{t.txType}"
+					%li= "Status: #{t.txStatus}"
+					%li= "Domain: #{t.domain}"
+			%td.transactionList
+				%ul
+					%li= "Started: #{t.started_at}"
+					%li= "Refunded: #{t.refunded_at}"
+					%li= "Notification: #{t.notification_at}"
+			%td.transactionList
+				= t.body
